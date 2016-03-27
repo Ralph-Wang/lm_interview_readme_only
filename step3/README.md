@@ -10,7 +10,7 @@ https://qacandidate1.logicmonitor.com/santaba/rest/setting/datasources
 https://qacandidate1.logicmonitor.com/santaba/rpc/getDataSourceInstances
 ```
 
-2. rpc api 可以用 cookie 进行验证, 而 python 的 requests 库使用其 Session 类同一实例连续请求可以类似浏览器一般自动维护 cookie.
+2. rpc api 可以用 cookie 进行验证, 而 python 的 requests 库使用其 Session 类同一实例连续请求可以类似浏览器一般自动维护 cookie. 所以先请求 signIn 得到 cookie, 后续 rpc 接口直接访问即可
 
 3. post 请求用 json 参数可以, 发送 application/json 的 body
 
