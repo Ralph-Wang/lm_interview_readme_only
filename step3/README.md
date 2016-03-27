@@ -1,4 +1,5 @@
 
+0. `pip install -r requirements.txt` 以安装依赖
 
 # API 版本说明
 
